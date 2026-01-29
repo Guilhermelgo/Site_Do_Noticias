@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-     font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -80,19 +80,146 @@ header nav a:nth-child(5):hover {
 }
 
 h2{
-    font-size: 40px;
-
-}
-
-h3,h4{
     font-size: 30px;
 
 }
 
+h3,h4{
+    font-size: 20px;
+
+}
+
+main{
+    display: flex;
+    /*justify-content: space-around;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+#noticia_principal h2{
+
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 650;
+}
+
+#noticia_principal ul{
+
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#noticia_principal ul li{
+
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 10px;
+
+}
+
+#noticia_principal ul li::marker{
+    color: #09FF00;
+
+}
+
+#segunda_seçao_azul ul li::marker{
+
+    color: rgb(56, 56, 248);
+}
+
+#terceira_seçao_vermelho ul li::marker{
+
+    color: rgb(123, 2, 2);
+}
+
+#quarta_seçao_laranja ul li::marker{
+
+    color: rgb(255, 68, 0);
+}
+
+
+/*
+main section ul {
+
+list-style: none;
+
+}
+*/
+
+main section:first-child{
+
+    width: 60%;
+    padding-right: 40px;
+    border-right: 1px solid rgba(0, 0, 0, 0.205);
+
+}
+
+main section:nth-child(2){
+
+    width: 20%;
+    padding: 0 30px; /*0 px : top and bottom, 30px: left and right*/
+    border-right: 1px solid rgba(0, 0, 0, 0.205);
+
+
+}
+
+main section:nth-child(3){
+
+    width: 20%;
+    padding: 0 30px;
+}
+
+#primeira_seçao_verde{
+
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+
+
+}
+
+#primeira_seçao_verde img{
+
+    width:100%;
+
+}
+#primeira_seçao_verde article{ 
+
+    width:30%
+}
+
+#primeira_seçao_verde ul{
+
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 300;
+
+    
+}
+
+#primeira_seçao_verde ul li::marker{
+
+    color: #09FF00;
+}
+
+
+
+#segunda_seçao_azul{
+
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
 
 .cor-verde{
       
     color: rgb(38, 255, 0);
+
 
 
 }
