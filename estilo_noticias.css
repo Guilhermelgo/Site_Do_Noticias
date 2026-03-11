@@ -4,7 +4,9 @@
     font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0;
+    /* box-sizing: border-box; */
 }
+
 
 #cabecalho{
     display: flex;
@@ -19,8 +21,17 @@
 #icones_git_lupa img {
     max-width: 50px;
     max-height: 50px;
+    /* border-radius: 20px; */
 
 }
+
+#icones_git_lupa img:nth-child(2) {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 20px;
+
+}
+
 
 
 #icones_git_lupa{
@@ -34,11 +45,18 @@
 header{
     display: flex;
     background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
     justify-content: space-around;
-  /*justify-content: space-between;*/
     align-items: center;
-    height: 100px;
+    /* z-index:1000; */
+    position:fixed;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.header-scroll{
+background-color: rgba(0, 0, 0, 0.589);
+
 }
 
 header nav {
@@ -112,10 +130,12 @@ h3,h4{
 main{
     display: flex;
     /*justify-content: space-around;*/
-    padding-top: 50px;
+    padding-top: 120px;
     padding-bottom: 50px;
     padding-left: 80px;
     padding-right: 80px;
+    /* min-height:100vh; */    
+    box-sizing: border-box;
 
 }
 
@@ -372,6 +392,7 @@ footer p{
     }
 
     main{
+        padding-top: 200px;
         flex-direction: column;
     }
 
@@ -401,9 +422,11 @@ footer p{
 
         header{
         flex-direction: column;
-        padding: 20px;
+        /* padding: 20px; */
         gap: 15px;
-        height: 100%;
+        /* height: 30%; */
+        padding:18px 30px;
+
 
     }
 
@@ -463,7 +486,7 @@ footer p{
     }
 
     main {
-
+        /* padding-top: 300px; */
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -495,6 +518,15 @@ footer p{
         80%  {color: rgb(151, 62, 3);}
         90% {color: rgb(119, 116, 116);}
         100% {color: rgb(151, 0, 252);}
+
+
+    }
+
+    @media(max-width: 560px){
+
+        main {
+         padding-top: 250px;
+    }
 
 
     }
